@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            margin: 100px 0;
+        }
+
+        .elm{
+            height: 90px;
+            width: 90px;
+            border-radius: 100%;
+            background-color: #ddd;
+        }
+        .fCenter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div">
+        <img src="smartscripts-fav.png" class="logo" alt="">
+    </div>
+
+
+    <!-- 
+    Properties:  
+    duration:
+    delay:
+    repeat:
+    yoyo:
+    stagger:
+    ease
+    onComplete
+    
+    -->
+    
+
+    <div class="div">
+        <div class="elm1 elm fCenter">1</div>
+        <div class="elem2 elm fCenter" style="transform: translateX(300px);">2</div>
+        <div class="elm3 elm fCenter" style="border-radius: 15px;">Delay</div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="main.js"></script>
+
+
+    <script>
+        // use a script tag or an external JS file
+        document.addEventListener("DOMContentLoaded", (event) => {
+         // gsap code here!
+        });
+       
+       </script>
+</body>
+</html>

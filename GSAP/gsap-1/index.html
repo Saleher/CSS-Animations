@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .space{
+            margin: 150vh 0;
+        }
+        .animatedElement {
+            background: #ddd;
+            display: block;
+            padding: 10px;
+            /* margin: 0 auto; */
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="space"></div>
+    <div class="space">
+        <div class="animatedElement">
+            <h2>Animate Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </div>
+    <div class="space"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+
+    <script>
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.animatedElement',
+                start: 'top center',
+                end: 'bottom center',
+                scrub: true,
+                markers: true,
+            }
+        });
+
+
+
+        tl.to('.animatedElement', {
+            x: 800
+        })
+
+
+    </script>
+   
+</body>
+</html>
